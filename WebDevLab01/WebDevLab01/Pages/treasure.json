@@ -1,0 +1,10 @@
+import json
+data= [
+    {"name": "Gold Coin", "lat":33, "lon":-85, "clue":"map", "loot":500, "difficulty":7},
+    {"name": "Diamond Gem", "lat":33.8, "lon":-84, "clue":"riddle", "loot":300, "difficulty":5},
+    {"name": "Ruby Necklace", "lat": 33.7, "lon": -83, "clue": "riddle", "loot":400, "difficulty":6},
+    {"name":"Pirate Crown", "lat":33.8, "lon": -84.5, "clue":"map", "loot":800, "difficulty":9},
+    ]
+with open("treasures.json", "w", encoding="utf-8") as f:
+    json.dump(data,f,indent=4)
+    
